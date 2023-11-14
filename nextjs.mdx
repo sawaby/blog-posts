@@ -1,0 +1,41 @@
+---
+title: "Introduction to Next.js"
+date: "2023-11-14"
+---
+
+# Next.js: The React Framework
+
+Next.js is a powerful and popular React framework that simplifies the process of building robust and performant web applications. It is designed to make React development more scalable, efficient, and SEO-friendly. In this MDX document, we'll explore some key features and concepts of Next.js.
+
+## Server-Side Rendering (SSR)
+
+One of the standout features of Next.js is its support for Server-Side Rendering. With SSR, pages are generated on the server and sent as HTML to the client, providing faster initial page loads and improved SEO. The `getServerSideProps` and `getInitialProps` functions allow developers to fetch data on the server before rendering the page.
+
+## Static Site Generation (SSG)
+
+Next.js also supports Static Site Generation, where pages are pre-built during the build process. This leads to faster page loads as static files can be served directly from a CDN (Content Delivery Network). The `getStaticProps` function is used to fetch data at build time.
+
+## Routing
+
+Routing in Next.js is straightforward. The `pages` directory structure defines the routes. For example, a file named `about.js` in the `pages` directory corresponds to the `/about` route.
+
+## API Routes
+
+Next.js provides an easy way to create API routes. Files in the `pages/api` directory automatically become API endpoints. This allows developers to build serverless functions and interact with databases directly.
+
+## CSS Support
+
+Next.js has built-in support for styling solutions like CSS Modules, Styled Components, and more. This makes it easy to manage styles at the component level.
+
+## Image Optimization
+
+Image optimization is simplified in Next.js. Images are automatically optimized and served in modern formats, improving performance. The `next/image` component provides a seamless way to handle images.
+
+## Getting Started
+
+To start a Next.js project, use the following commands:
+
+```bash
+npx create-next-app my-nextjs-app
+cd my-nextjs-app
+npm run dev
